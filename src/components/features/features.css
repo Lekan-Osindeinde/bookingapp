@@ -11,10 +11,13 @@
     border-radius: 10px;
     overflow: hidden;
     height: 250px;
+   
+
 }
 .featuresImg{
     width: 100%;
     object-fit: cover;
+   
 }
 .featuresTitle{
     position: absolute;
