@@ -1,4 +1,5 @@
 import Features from "../../components/features/Features";
+import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import MailList from "../../components/mailList/MailList";
 import Navbar from "../../components/navbar/Navbar";
@@ -18,6 +19,7 @@ const Home = () => {
         <h1 className="homeTitle">Homes guests love</h1>
         <PropFeatures />
         <MailList />
+        <Footer />
       </div>
     </div>
   );
