@@ -13,6 +13,14 @@ const List = () => {
   const [openDate, setOpenDate] = useState(false);
   const [date, setDate] = useState(location.state.date);
   const [options, setOptions] = useState(location.state.options);
+
+  const handleCliked = () => {
+    setOptions(options + 1);
+  };
+  const searchCliked = () => {
+    setDestination(destination);
+  };
+
   return (
     <div>
       <Navbar />
@@ -78,11 +86,14 @@ const List = () => {
                     className="lsoInput"
                     placeholder={options.room}
                     min={1}
+                    onClick={handleCliked}
                   />
                 </div>
               </div>
             </div>
-            <button className="sb">Search</button>
+            <button className="sb" onClick={searchCliked}>
+              Search
+            </button>
           </div>
           <div className="lResult">
             <SearchItem />
